@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
+int main() { 
     
     ios::sync_with_stdio(false);
     cin.tie(NULL);
-    cout<<2+2<<endl;
+    cout<<7+3<<endl;
 
 }
