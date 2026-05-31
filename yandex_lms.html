@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Оформление заказа</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Личные данные</legend>
+            <label for="n">Ваше имя</label>
+            <input type="text" name="full_name" id="n" required>
+            <label for="em">Email</label>
+            <input type="email" name="email" id="em" placeholder="example@mail.com" required>
+            <label for="phone">Телефон</label>
+            <input type="text" name="phone" id="phone" placeholder="89876543210" required>
+        </fieldset>
+
+        <label for="pr">Выберите товар:</label>
+        <select name="product_id" id="pr" required>
+            <option value="model_x">Смартфон Model X</option>
+            <option value="probook_z">Ноутбук ProBook Z</option>
+            <option value="soundwave" selected>Наушники SoundWave</option>
+        </select>
+
+        <fieldset>
+            <legend>
+                Дополнительно
+            </legend>
+            <input type="checkbox" id="pu" name="gift_wrap" value="yes">
+            <label for="pu">Подарочная упаковка</label>
+            <input type="checkbox" id="rg" name="extended_warranty" value="yes">
+            <label for="rg">Расширенная гарантия</label>
+        </fieldset>
+
+        <lebel for="tx">Ваш комментарий:</lebel>
+        <textarea name="comment" id="tx"></textarea>
+        
+
+        <button type="submit">Оформить заказ</button>
+        <button type="reset">Очистить форму</button>
+    </form>
+</body>
+</html>

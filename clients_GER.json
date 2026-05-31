@@ -1,0 +1,28 @@
+{
+    "1775288689130": {
+        "name": "Биймурад",
+        "phone": "345678",
+        "email": "bijmuradalavov1@gmail.com",
+        "address": "r4t5y6u",
+        "created": "2026-04-04T10:44:49.130963",
+        "balance": 50000.0,
+        "total_spent": 123.0,
+        "orders": [
+            "1775288728378"
+        ],
+        "returns": []
+    },
+    "1775289904369": {
+        "name": "Ратмир",
+        "phone": "5789403",
+        "email": "salonantar369@gmail.com",
+        "address": "ауцщ",
+        "created": "2026-04-04T11:05:04.369484",
+        "balance": 10000.0,
+        "total_spent": 70000.0,
+        "orders": [
+            "1775289933954"
+        ],
+        "returns": []
+    }
+}

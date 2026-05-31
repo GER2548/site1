@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LogiCode: Умная полка</title>
+<style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #121212; color: #e0e0e0; margin: 0; padding: 30px; }
+    header { text-align: center; margin-bottom: 40px; }
+    h1 { color: #00d2ff; margin-bottom: 5px; font-size: 2.5em; }
+    .subtitle { color: #888; font-size: 1.1em; }
+    .dashboard { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+    .card { background-color: #1e1e1e; padding: 25px; border-radius: 12px; border-left: 5px solid #00d2ff; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+    .btn { padding: 12px 20px; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 1em; margin-right: 10px; transition: 0.2s; }
+    .btn-receive { background-color: #00d2ff; color: #121212; }
+    .btn-receive:hover { background-color: #0098bc; }
+    .btn-ship { background-color: #ff4757; color: #fff; }
+    .btn-ship:hover { background-color: #ff2a3d; }
+    .grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 25px; }
+    .cell { background-color: #2a2a2a; padding: 20px; text-align: center; border-radius: 8px; font-weight: bold; cursor: pointer; transition: transform 0.2s, background-color 0.2s; border: 1px solid #333; }
+    .cell:hover { transform: translateY(-3px); border-color: #00d2ff; }
+    .cell.full { background-color: #ff4757; color: white; border-color: #ff4757; }
+    .cell.empty { background-color: #2ed573; color: #121212; border-color: #2ed573; }
+</style>
+</head>
+<body>
+    <header>
+        <h1>LogiCode</h1>
+        <p class="subtitle">Консольный симулятор хранения на мини-складе</p>
+    </header>
+    <div class="dashboard">
+        <div class="card">
+            <h2>📊 Статистика сектора</h2>
+            <p>Занято ячеек: <strong>12 / 50</strong></p>
+            <p>Товаров в дефиците: <span style="color: #ff4757; font-weight: bold;">3</span></p>
+        </div>
+        <div class="card">
+            <h2>⚙️ Панель управления</h2>
+            <br>
+            <button class="btn btn-receive">Входящая поставка</button>
+            <button class="btn btn-ship">Оформить отгрузку</button>
+        </div>
+    </div>
+    <h2 style="margin-top: 50px;">Карта склада (Зона А)</h2>
+    <div class="grid">
+        <div class="cell full">A1<br><small>Мониторы</small></div>
+        <div class="cell empty">A2<br><small>Свободно</small></div>
+        <div class="cell full">A3<br><small>Клавиатуры</small></div>
+        <div class="cell empty">A4<br><small>Свободно</small></div>
+        <div class="cell empty">A5<br><small>Свободно</small></div>
+    </div>
+</body>
+</html>
