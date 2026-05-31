@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "GERsnake",
+			"path": "../../Documents/PlatformIO/Projects/GERsnake"
+		},
+		{
+			"name": "GERsnake1",
+			"path": "../../Documents/PlatformIO/Projects/GERsnake1"
+		}
+	],
+	"settings": {}
+}
